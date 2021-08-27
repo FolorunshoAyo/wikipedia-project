@@ -1,0 +1,93 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 70%;
+    margin: 4em auto;
+}
+.head{
+    text-align: center;
+    padding: 1em;
+    border: 0.3em solid black;
+    border-radius: 0.5em;
+    margin-bottom: 1.5em;
+}
+.head img{
+    width: 100%;
+}
+.form-group label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.8em;
+}
+.form-group input{
+    width: 80%;
+    padding: 1em;
+    float: left;
+    border-radius: 4em 0 0 4em;
+    font-size: 1.1em;
+}
+.form-group input:focus{
+    outline: none;
+}
+button[type="submit"]{
+    float: left;
+    width: 20%;
+    padding: 8px 5px 11px 10px;
+    font-size: 17px;
+    border: 0.2em solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    transition: color 0.5s ease-in 0.3s;
+    color: rgb(8, 110, 141);
+}
+button.resizeBox{
+    padding: 17px 5px 17px 10px;
+}
+.img-overlay{
+    z-index: 5;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.412);
+}
+.show{
+    display: flex;
+}
+.img-overlay img{
+    display: block;
+}
+.search-container{
+    padding: 2em 0;
+}
+.result{
+    padding: 1em;
+    margin: 2em 0;
+    border: 1px solid gray;
+}
+.title{
+    padding: 0.1em 0;
+    margin: 0.2em 0;
+}
+.address{
+    color: green;
+}
+.timestamp{
+    text-align: right;
+    padding: 1.5em 0 0 0;
+}
+.searchmatch{
+    color: blue;
+}
