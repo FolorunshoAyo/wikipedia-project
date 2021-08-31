@@ -1,6 +1,7 @@
 $(function(){
     let searchForm = $("#searchForm");
     let searchResults = $(".results");
+    let alertBox = $(".alert");
 
     // for checking connectivity status
     let connStatus = navigator.onLine;
@@ -8,11 +9,17 @@ $(function(){
     let searchButton = $("[type = 'submit']");
 
     if(!connStatus){
+        alertBox.addClass("show");
+        alertBox.text("No Internet Connection");
         searchIcon.html("Search");
         searchButton.addClass("resizeBox");
+        searchButton.attr("disabled", "disabled");
     }else{
+        alertBox.removeClass("show");
         searchIcon.html("");
+        alertBox.text("");
         searchButton.removeClass("resizeBox");
+        searchButton.removeAttr("disabled");
     }
 
     searchForm.on("submit", function(e){
