@@ -44,7 +44,7 @@ $(function(){
                },
                 timeout: 2000,
                 beforeSend: function(){
-                    $(".img-overlay").addClass("show");
+                    $(".img-overlay").addClass("showloading");
                   },
                 success: function(response){
                     $(".img-overlay").css("display", "none");
@@ -65,7 +65,7 @@ $(function(){
                     );
                     }
                 }
-                }
+                },
             });
         }
     });

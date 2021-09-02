@@ -10,6 +10,20 @@ body{
     width: 70%;
     margin: 4em auto;
 }
+.alert{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(250, 64, 64);
+    padding: 1em 0;
+    display: none;
+}
+
+div.show{
+    display: block;
+}
 .head{
     text-align: center;
     padding: 1em;
@@ -55,15 +69,15 @@ button.resizeBox{
     z-index: 5;
     position: fixed;
     top: 0px;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
     display: none;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.412);
 }
-.show{
+.showloading{
     display: flex;
 }
 .img-overlay img{
