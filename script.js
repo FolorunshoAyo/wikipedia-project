@@ -31,6 +31,7 @@ $(function(){
             if(searchResults.html() !== ""){
                 searchResults.html("");
             }
+            // jquery ajax method for sending async request to wikipedia's server
             $.ajax({
                 type: $(this).attr("method"),
                 url: "https://en.wikipedia.org/w/api.php",
@@ -54,6 +55,7 @@ $(function(){
                     if(searchResults == ""){
                         alert("No results found, try different keywords");
                     }else{
+                        //looping through all response data in json format
                     for(let i = 0; i <= searchNumber - 1; i++){
                         $(".results").append(`
                         <div class="result">
